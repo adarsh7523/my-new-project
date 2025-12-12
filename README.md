@@ -1,99 +1,50 @@
-# 🚀 Project Name (Mobile + API)
+# Welcome to your Expo app 👋
 
-> A modern, full-stack application leveraging React Native for the mobile client and a robust NestJS backend.
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## 🌟 Introduction
+## Get started
 
-Welcome! This repository contains the source code for the [Project Name] application. The project is designed for scalability and high performance, utilizing a clean separation between the mobile client and the dedicated REST API.
+1. Install dependencies
 
-## 🛠️ Technology Stack
+   ```bash
+   npm install
+   ```
 
-This project is built using the following core technologies and libraries:
+2. Start the app
 
-### Frontend (Mobile App)
-* **Framework:** React Native (Managed by Expo)
-* **State Management:** Redux Toolkit
-* **Styling/UI:** React Native Paper (for Material Design components)
-* **Icons:** `react-native-vector-icons`
-* **API Client:** Axios
+   ```bash
+   npx expo start
+   ```
 
-### Backend (API)
-* **Framework:** NestJS (built on Node.js/Express)
-* **Language:** TypeScript
-* **Database:** [Specify your Database, e.g., PostgreSQL, MongoDB]
-* **Deployment:** AWS ([Specify the service, e.g., AWS App Runner, ECS])
+In the output, you'll find options to open the app in a
 
-## 🏗️ Getting Started
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-To run both the mobile application and the API locally, follow these steps.
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-### Prerequisites
+## Get a fresh project
 
-* Node.js (v18+)
-* Git
-* Nest CLI (`npm i -g @nestjs/cli`)
-* Expo CLI (`npm i -g expo-cli`)
+When you're ready, run:
 
-### 1. Backend API Setup (NestJS)
+```bash
+npm run reset-project
+```
 
-1.  Navigate to the backend directory:
-    ```bash
-    cd backend-api
-    ```
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
-3.  Start the development server (runs on `http://localhost:3000` by default):
-    ```bash
-    npm run start:dev
-    ```
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-### 2. Frontend App Setup (React Native / Expo)
+## Learn more
 
-1.  Navigate to the mobile app directory (in a new terminal window):
-    ```bash
-    cd mobile-app
-    ```
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
-3.  Start the Expo server:
-    ```bash
-    npm start
-    ```
-    * **Note:** Scan the QR code using the **Expo Go** app on your physical device, or use the controls to launch on an emulator/simulator.
-    * **Crucial:** Ensure the API client (`axios` setup) uses your local machine's IP address if running the mobile app on a physical device, or `http://10.0.2.2:3000` for Android emulators.
+To learn more about developing your project with Expo, look at the following resources:
 
-## 🌳 Branching Strategy (For Collaborators)
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-We utilize a **Feature Branch Workflow** to manage sprint cycles and maintain a stable main branch.
+## Join the community
 
-| Branch Name | Purpose | Status |
-| :--- | :--- | :--- |
-| `main` | Production-ready, stable code. Only receives merges from completed release branches. **Protected.** | Stable |
-| `release/sprint-01` | The current primary development branch for all work in Sprint 01. All features/tasks are merged here after review. | Active |
-| `feature/task-name` | A branch created for a single, specific task (e.g., `feature/user-auth`, `bugfix/api-error`). | Ephemeral |
+Join our community of developers creating universal apps.
 
-### How to Contribute:
-
-1.  Always base your work on the current active sprint branch (`release/sprint-01`):
-    ```bash
-    git checkout release/sprint-01
-    git pull origin release/sprint-01
-    ```
-2.  Create your new task branch:
-    ```bash
-    git checkout -b feature/TASK-NAME-HERE
-    ```
-3.  When finished, open a **Pull Request (PR)** on GitHub targeting the **`release/sprint-01`** branch. The team leader will review and merge it.
-
-## 📝 License
-
-This project is licensed under the [LICENSE NAME] - see the `LICENSE` file for details.
-
-## 🧑‍💻 Contact
-
-* **Leader:** [Your Name] - [Your Email/GitHub Profile]
-* **Project GitHub:** [https://github.com/YOUR_USERNAME/REPO_NAME]
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
