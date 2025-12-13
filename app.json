@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "my-new-project",
+    "name": "",
     "slug": "my-new-project",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/AH-Full.png",
     "scheme": "mynewproject",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,24 +13,20 @@
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
-      },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "foregroundImage": "./assets/images/AH-Half.png",
+      "backgroundColor": "#E6F4FE"
+      }
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/AH-half.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/AH-Full.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
@@ -43,6 +39,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "6346161a-35ab-40d3-8ec9-aaab872fdca0"
+      }
+    },
+    "owner": "adarsh7523"
   }
 }
